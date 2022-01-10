@@ -1,8 +1,8 @@
 import React from 'react'
 import {useState} from "react"
-import InputField from "../InputField/index"
-import IconField from "../IconField/index";
-import Button from "../Button/index"
+import InputField from "../../components/InputField/index"
+import IconField from "../../components/IconField/index";
+import Button from "../../components/Button/index"
 import "./index.css"
 import {useHistory} from "react-router-dom"
 

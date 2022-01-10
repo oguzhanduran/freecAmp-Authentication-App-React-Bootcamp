@@ -1,8 +1,8 @@
 import React from 'react'
 import "./index.css"
-import InputField from "../InputField/index"
-import IconField from "../IconField/index";
-import Button from "../Button/index"
+import InputField from "../../components/InputField/index"
+import IconField from "../../components/IconField/index";
+import Button from "../../components/Button/index"
 import {useState, useEffect} from "react"
 import { useHistory } from "react-router-dom"
 
@@ -26,7 +26,7 @@ function LoginForm() {
     
             result = await result.json(); 
             localStorage.setItem("user-info", JSON.stringify(result))
-            history.push("/productpage")
+            history.push("/camppage")
     } 
     
     // ilk Api datayı aldı yani email ve password'u ve sonra email ve password'u return etti sonra bu data local storage'da kaydedildi sonrasında login profile'a yönlendirildi. Dropdown kullanıldı kayıt için.
