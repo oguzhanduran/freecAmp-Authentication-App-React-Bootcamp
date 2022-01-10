@@ -1,3 +1,15 @@
 .campPage{
     text-align: center;
 }
+
+.campPageBackground{
+    position: absolute;
+    Top: 130px;
+    Left: 270px;
+    background: #E2EEF5;
+}
+
+.campPagePhoto{
+width: 1000px;
+height: 575px;
+}

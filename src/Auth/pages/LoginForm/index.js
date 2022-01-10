@@ -21,7 +21,7 @@ function LoginForm() {
 
     async function login() { // bir promise döneceği için async ve await'i kullandık.
         let item = { email, password }
-        let result = await fetch("https://61c458fef1af4a0017d994c8.mockapi.io/login", {
+        let result = await fetch("https://61c458fef1af4a0017d994c8.mockapi.io/Auth", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json", // gönderdiğimiz datalar
@@ -32,7 +32,8 @@ function LoginForm() {
 
         result = await result.json();
         localStorage.setItem("user-info", JSON.stringify(result))
-        window.location.reload();
+        
+        console.log(result)
         history.push("/camppage")
     }
 

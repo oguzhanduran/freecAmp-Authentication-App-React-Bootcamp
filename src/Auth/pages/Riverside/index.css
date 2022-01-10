@@ -1,3 +1,14 @@
 .Riverside{
     text-align: center;
 }
+
+.riversideBackground{
+    position: absolute;
+    Top: 130px;
+    Left: 270px;
+}
+
+.riversidePhoto{
+width: 1000px;
+height: 575px;
+}

@@ -4,3 +4,15 @@
     display: flex;
 }
 
+.wildCampingBackground{
+    position: absolute;
+    Top: 130px;
+    Left: 270px;
+
+}
+
+.wildCampingPhoto{
+width: 1000px;
+height: 575px;
+}
+

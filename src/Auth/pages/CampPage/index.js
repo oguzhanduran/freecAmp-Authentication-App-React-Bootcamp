@@ -4,7 +4,10 @@ import "./index.css"
 function CampPage() {
     return (
         <div>
-            <h1 className='campPage'>Welcome to freecAmp Website!</h1>  
+            <h1 className='campPage'>Welcome to freecAmp!</h1>  
+            <div className='campPageBackground'>
+                <img className='campPagePhoto' src={require("./img/welcometowebsite.png")} alt="campPagePhoto" />
+                </div>
         </div>
     )
 }
