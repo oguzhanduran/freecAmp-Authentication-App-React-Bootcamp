@@ -1,0 +1,77 @@
+.field-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.field-title {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #414042;
+    /* margin-top: 31.11px; */
+
+}
+
+.field-input{
+    /* İnput */
+    width: 394.08px;
+    height: 48.59px;
+    left: calc(50% - 394.08px/2 - 425.84px);
+    top: calc(50% - 48.59px/2 - 149.9px);
+
+    background: #FFFFFF;
+    border: 1px solid #BCBEC0;
+    box-sizing: border-box;
+    border-radius: 40px;
+    margin-top: 7.78px;
+    padding-left: 21.67px;
+
+    /* Text */
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+
+    color: #414042;
+    margin-bottom: 31.11px; /* Burda margin bottom vermemizin nedeni olusturduğumuz componenti farklı yerlerde kullanırken her seferinde aynı boşluğu vermesi için yani üstten verseydik farklı durumlarla karısıklık çıkabilirdi alltan vermek her yerde kullanılabilmesi adına component mantığına daha yakın*/
+}
+
+.field-password{
+    width: 96.55px;
+    height: 13.61px;
+    left: calc(50% - 96.55px/2 - 574.6px);
+    top: calc(50% - 13.61px/2 + 0.74px);
+
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    
+
+    color: #465685;
+    margin-top: -20px;
+}
+
+.eyeIcon{
+    position: absolute;
+    width: 15.76px;
+    height: 15.55px;
+    left: calc(50% - 15.76px/2 - 247.49px);
+    top: calc(50% - 15.55px/2 + 0.38px);
+    
+    border-radius: 40px;
+    margin-left: 420px;
+    margin-top: -20px;
+}

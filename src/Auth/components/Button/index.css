@@ -1,0 +1,28 @@
+.button{
+    /* Button */
+    width: 394.08px;
+    height: 48.59px;
+    left: calc(50% - 394.08px/2 - 414.97px);
+    top: calc(50% - 48.59px/2 + 119.92px);
+
+    background: #A93159;
+    border-radius: 40px;
+    margin-bottom: 43.73px;
+
+    /* Text */
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+    padding-left: 165px;
+    margin-top: 40.82px;
+
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+   cursor: pointer;
+
+}

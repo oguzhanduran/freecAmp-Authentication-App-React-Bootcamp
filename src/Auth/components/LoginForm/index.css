@@ -1,0 +1,89 @@
+.lf-container{
+    height: 578.2677001953125px;
+    width: 395.06500244140625px;
+    left: 336.1351318359375px;
+    top: 229.7379150390625px;
+    border-radius: 40px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+   
+    margin-left: 125.12px; 
+
+}
+
+.lf-titles-container {
+    margin-top: 112.74px;
+    
+}
+
+.lf-title-logo{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    color: #465685;
+}
+
+.lf-title-login{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 46px;
+    display: flex;
+    align-items: center;
+    color: #414042;
+    margin-top: 12.63px;
+}
+
+.sign-in-button{
+    /* Button */
+    width: 394.08px;
+    height: 48.59px;
+    left: calc(50% - 394.08px/2 - 414.97px);
+    top: calc(50% - 48.59px/2 + 119.92px);
+
+    background: #A93159;
+    border-radius: 40px;
+    margin-bottom: 43.73px;
+
+    /* Text */
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+    padding-left: 165px;
+    margin-top: 40.82px;
+}
+
+/* Hem className verip hemde inline'da style tanımlarsak inline'daki çalışır. */
+
+.avatar{
+    position: absolute;
+    width: 1158.48px;
+    height: 864px;
+    left: calc(50% - 1158.48px/2 + 303.24px);
+    top: calc(50% - 864px/2 + 65px);
+
+    /* background: url(avatar_makata_vespa_04.png);   */
+    border-radius: 40px;
+    /* avatarın backgrounduna ulaşılamıyor */
+}
+.background-color{
+    position: absolute;
+    width: 465px;
+    height: 727px;
+    left: calc(50% - 500.44px/2 + 553.14px);
+    top: calc(50% - 864px/2 + 65px);
+
+    background: #E2EEF5;
+    border-radius: 40px;
+}

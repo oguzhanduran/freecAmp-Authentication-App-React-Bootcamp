@@ -1,0 +1,122 @@
+.If-continue {
+    
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+
+    color: #798995;
+    padding-left: 150px;
+    margin-bottom: 15.55px;
+}
+
+.icons{
+    cursor: pointer;
+   
+    padding-left: 50px;
+    
+
+    
+    
+    
+    
+}
+
+.google-rectangle{
+    width: 123.15px;
+    height: 48.59px;
+    left: calc(50% - 123.15px/2 - 549.45px);
+    top: calc(50% - 48.59px/2 + 243.35px);
+
+    background: #FFFFFF;
+    border: 1px solid #BCBEC0;
+    box-sizing: border-box;
+    border-radius: 40px;
+    float: left;
+    
+}
+
+.github-rectangle{
+    width: 123.15px;
+    height: 48.59px;
+    left: calc(50% - 123.15px/2 - 549.45px);
+    top: calc(50% - 48.59px/2 + 243.35px);
+
+    background: #FFFFFF;
+    border: 1px solid #BCBEC0;
+    box-sizing: border-box;
+    border-radius: 40px;
+    float: left;
+    margin-left: 12px;
+}
+
+.facebook-rectangle{
+    width: 123.15px;
+    height: 48.59px;
+    left: calc(50% - 123.15px/2 - 549.45px);
+    top: calc(50% - 48.59px/2 + 243.35px);
+
+    background: #FFFFFF;
+    border: 1px solid #BCBEC0;
+    box-sizing: border-box;
+    border-radius: 40px;
+    float: left;
+    margin-left: 12px;
+}
+
+
+.facebook-icon{
+    width: 26px;
+    height: 26px;
+    left: calc(50% - 23.64px/2 - 548.96px);
+    top: calc(50% - 23.33px/2 + 243.35px);
+    border-radius: 40px;
+    padding-left: 45px;
+    padding-top: 10px;
+    color: #059BE5;
+    cursor: zoom-in;
+}
+
+.account{
+    width: 175.37px;
+    height: 15.55px;
+    left: calc(50% - 175.37px/2 - 486.89px);
+    top: calc(50% - 15.55px/2 + 306.52px);
+
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+   
+    color: #BCBEC0;
+}
+
+.register{
+    width: 101.48px;
+    height: 16.52px;
+    left: calc(50% - 101.48px/2 - 343.55px);
+    top: calc(50% - 16.52px/2 + 307.01px);
+
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    
+    color: #465685;
+    cursor: pointer;
+}
+
+.footer{
+    margin-left: 70px;
+    padding-top: 75px;
+}
+
+
+
+
