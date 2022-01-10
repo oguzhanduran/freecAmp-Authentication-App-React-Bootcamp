@@ -37,12 +37,12 @@ function Registration() {
         <div>
             <div className="">
                 <div className='reg-background'>
-
+                <img className='regPageBackground' src={require("./img/registrationBackground.png")} alt="regbackground" />
                 </div>
             </div>
             <div className='registration-container'>
                 <div className='reg-titles-container'>
-                    <h1 className='reg-title-logo'>Your logo</h1>
+                    <h1 className='reg-title-logo'>freecAmp</h1>
                     <h1 className='reg-title-login'>Registration</h1>
                 </div>
                 <div> 

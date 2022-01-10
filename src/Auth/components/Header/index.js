@@ -7,13 +7,13 @@ import "./index.css"
 function Header() {
     return (
         <div>
-            <Navbar bg="dark" variant="blue">
-            <Navbar.Brand href="#home">E-Com</Navbar.Brand>
+            <Navbar bg="light" variant="light" className='navbar'>
+            <Navbar.Brand  className='navbar-brand'><Link to="/">freecAmp</Link></Navbar.Brand>
                     <Nav className="me-auto navbar_warapper">
-                    <Link to="/addproduct">Add Products</Link>
-                    <Link to="/updateproduct">Update Products</Link>
-                    <Link to="/loginform">Login</Link>
-                    <Link to="/registration">Register</Link>
+                        <Link to="/wildcamping">Wild Camping</Link>
+                        <Link to="/riverside">Riverside</Link>
+                        <Link to="/loginform">Login</Link>
+                        <Link to="/registration">Register</Link>
                    </Nav>
             </Navbar>
         </div>

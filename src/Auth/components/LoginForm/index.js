@@ -35,12 +35,12 @@ function LoginForm() {
         <div>
             <div className="">
                 <div className='background-color'>
-
+                <img className='loginPageBackground' src={require("./img/loginBackground.png")} alt="logingbackground" />
                 </div>
             </div>
             <div className='lf-container'>
                 <div className='lf-titles-container'>
-                    <h1 className='lf-title-logo'>Your logo</h1>
+                    <h1 className='lf-title-logo'>freecAmp</h1>
                     <h1 className='lf-title-login'>Login</h1>
                 </div>
                 <div> 

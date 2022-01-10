@@ -11,20 +11,20 @@
 }
 
 .lf-titles-container {
-    margin-top: 112.74px;
+    margin-top: 80.74px;
     
 }
 
 .lf-title-logo{
-    font-family: Gilroy;
-    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
     /* identical to box height */
     display: flex;
     align-items: center;
-    color: #465685;
+    color: green;
+    text-decoration: underline;
 }
 
 .lf-title-login{
@@ -66,24 +66,17 @@
 
 /* Hem className verip hemde inline'da style tanımlarsak inline'daki çalışır. */
 
-.avatar{
-    position: absolute;
-    width: 1158.48px;
-    height: 864px;
-    left: calc(50% - 1158.48px/2 + 303.24px);
-    top: calc(50% - 864px/2 + 65px);
-
-    /* background: url(avatar_makata_vespa_04.png);   */
-    border-radius: 40px;
-    /* avatarın backgrounduna ulaşılamıyor */
-}
 .background-color{
     position: absolute;
-    width: 465px;
-    height: 727px;
-    left: calc(50% - 500.44px/2 + 553.14px);
-    top: calc(50% - 864px/2 + 65px);
-
+    Width: 905px;
+    Height: 546px;
+    Top: 111px;
+    Left: 631px;
     background: #E2EEF5;
-    border-radius: 40px;
+    margin-right: 10px;
+}
+
+.loginPageBackground{
+    Width: 905px;
+    Height: 546px;
 }

@@ -8,27 +8,21 @@
     
 }
 
-.hello :thumbsup {
-
-    
-    font-family: Gilroy;
+.hello {
+    margin-top: 30px;
+    font-family: 'Times New Roman', Times, serif;
     font-style: normal;
     font-weight: bold;
     font-size: 47.7488px;
     line-height: 58px;
 /* identical to box height */
-
-display: flex;
-align-items: center;
-
-color: #000000;
-    
-    
-    
+    display: flex;
+    align-items: center;
+    color: #000000;
 }
 
 .paragraph{
-    font-family: Poppins;
+    font-family: 'Times New Roman', Times, serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -44,15 +38,8 @@ color: #000000;
 }
 
 .arrow{
-    
-    
-    width: 24.75px;
-    height: 50px;
-    left: 324px;
-    top: 518.62px;
-
-    transform: rotate(180deg);
-    margin-top: 20px;
+   
+    padding-top: 30px;
     margin-left: 250px;
     color: #B1B8CA;
     }
@@ -100,5 +87,8 @@ color: #000000;
     background: #E2EEF5;
 }
 
-
+.landingPageBackground {
+    Width: 905px;
+    Height: 546px;
+}
 

@@ -13,16 +13,23 @@
     margin-bottom: 15.55px;
 }
 
-.icons{
+.googleIcon{
     cursor: pointer;
-   
+    color:#4285F4;
     padding-left: 50px;
-    
+}
 
-    
-    
-    
-    
+.githubIcon{
+    cursor: pointer;
+    padding-left: 50px; 
+}
+
+.facebook-icon{
+    color: #059BE5;
+    cursor: pointer;
+    padding-left: 48px; 
+
+
 }
 
 .google-rectangle{
@@ -68,17 +75,7 @@
 }
 
 
-.facebook-icon{
-    width: 26px;
-    height: 26px;
-    left: calc(50% - 23.64px/2 - 548.96px);
-    top: calc(50% - 23.33px/2 + 243.35px);
-    border-radius: 40px;
-    padding-left: 45px;
-    padding-top: 10px;
-    color: #059BE5;
-    cursor: zoom-in;
-}
+
 
 .account{
     width: 175.37px;
