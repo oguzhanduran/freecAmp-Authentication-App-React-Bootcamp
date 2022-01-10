@@ -1,5 +1,5 @@
 import React from 'react'
-import {useState} from "react"
+import {useState, useEffect} from "react"
 import InputField from "../../components/InputField/index"
 import IconField from "../../components/IconField/index";
 import Button from "../../components/Button/index"
@@ -7,6 +7,12 @@ import "./index.css"
 import {useHistory} from "react-router-dom"
 
 function Registration() {
+
+    useEffect(() => {
+if(localStorage.getItem("user-info")) {
+    history.push("/camppage") 
+}
+    }, []) // Burada local storage user-info key değerini aldığında sayfayı camppage sayfasına yönlendir dedik.
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -28,8 +34,8 @@ function Registration() {
 
         result = await result.json()
         localStorage.setItem("user-info", JSON.stringify(result)) // local storage'a kaydederken string'e çevirmek zorundayız.
-         
-       history.push("/loginform")
+       window.location.reload(); 
+       history.push("/camppage")
 
     }
 

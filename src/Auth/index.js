@@ -6,6 +6,7 @@ import Riverside from './pages/Riverside'
 import WildCamping from './pages/WildCamping'
 import Header from './components/Header'
 import CampPage from './pages/CampPage'
+import ProtectedRoutes from './protectedRoutes/ProtectedRoutes'
 import "./index.css"
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
@@ -18,9 +19,13 @@ function Auth() {
           <Route exact path="/" component={LandingPage} />
           <Route exact path="/loginform" component={LoginForm} />
           <Route exact path="/registration" component={Registration} />
-          <Route exact path="/riverside" component={Riverside} />
+          {/* <Route exact path="/camppage" component={CampPage} />
           <Route exact path="/wildcamping" component={WildCamping} />
-          <Route exact path="/camppage" component={CampPage} />
+          <Route exact path="/riverside" component={Riverside} /> */}
+
+          <Route exact path="/camppage"> <ProtectedRoutes Cmp={CampPage}/> </Route>
+          <Route exact path="/wildcamping"> <ProtectedRoutes Cmp={WildCamping}/> </Route>
+          <Route exact path="/riverside"> <ProtectedRoutes Cmp={Riverside}/> </Route>
 
         </Switch>
     </Router>
