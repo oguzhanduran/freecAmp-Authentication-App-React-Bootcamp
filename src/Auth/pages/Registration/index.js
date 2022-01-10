@@ -9,7 +9,7 @@ import {useHistory} from "react-router-dom"
 function Registration() {
 
     useEffect(() => {
-if(localStorage.getItem("user-info")) {
+    if(localStorage.getItem("user-info")) {
     history.push("/camppage") 
 }
     }, []) // Burada local storage user-info key değerini aldığında sayfayı camppage sayfasına yönlendir dedik.
@@ -19,9 +19,14 @@ if(localStorage.getItem("user-info")) {
     const history = useHistory();
 
     async function signup() {
-        let item = {email, password};
+       let item = {email, password};
         console.warn(item);
-
+        if(!/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/.test(email)) {
+            return;
+           }
+           if(!/(.*[a-z]){3}/i.test(password)) {
+            return;
+           }
         let result = await fetch("https://61c458fef1af4a0017d994c8.mockapi.io/Auth", {
             method: "POST",
             body: JSON.stringify(item), // göndereceğimiz şeyi mutlaka string'e çevirmeliyiz.
