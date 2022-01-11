@@ -24,6 +24,10 @@ function Registration() {
         if (!/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/.test(email)) {
             return;
         }
+        if (!/.{6,}/.test(password)) {
+            return;
+            }
+            
         let result = await fetch("https://61c458fef1af4a0017d994c8.mockapi.io/Auth", {
             method: "POST",
             body: JSON.stringify(item), // göndereceğimiz şeyi mutlaka string'e çevirmeliyiz.
@@ -38,7 +42,6 @@ function Registration() {
         console.log(result)
         window.location.reload();
         history.push("/homepage")
-
     }
 
 
