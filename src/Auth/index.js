@@ -4,8 +4,8 @@ import LandingPage from "./pages/LandingPage/index"
 import Registration from './pages/Registration/index.js'
 import Riverside from './pages/Riverside'
 import WildCamping from './pages/WildCamping'
+import HomePage from './pages/HomePage'
 import Header from './components/Header'
-import CampPage from './pages/CampPage'
 import ProtectedRoutes from './protectedRoutes/ProtectedRoutes'
 import "./index.css"
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
@@ -23,7 +23,7 @@ function Auth() {
           <Route exact path="/wildcamping" component={WildCamping} />
           <Route exact path="/riverside" component={Riverside} /> */}
 
-          <Route exact path="/camppage"> <ProtectedRoutes Cmp={CampPage}/> </Route>
+          <Route exact path="/homepage"> <ProtectedRoutes Cmp={HomePage}/> </Route>
           <Route exact path="/wildcamping"> <ProtectedRoutes Cmp={WildCamping}/> </Route>
           <Route exact path="/riverside"> <ProtectedRoutes Cmp={Riverside}/> </Route>
 

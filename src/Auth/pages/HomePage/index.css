@@ -1,15 +1,15 @@
-.campPage{
+.homePage{
     text-align: center;
 }
 
-.campPageBackground{
+.homePageBackground{
     position: absolute;
     Top: 130px;
     Left: 270px;
     background: #E2EEF5;
 }
 
-.campPagePhoto{
+.homePagePhoto{
 width: 1000px;
 height: 575px;
 }

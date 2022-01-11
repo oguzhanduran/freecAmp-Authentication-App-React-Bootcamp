@@ -8,10 +8,11 @@ function Header() {
 
     let user = JSON.parse(localStorage.getItem("user-info"))
     const history = useHistory();
+    
     function logOut () {
         localStorage.clear();
         window.location.reload();
-        history.push("/registration")
+        history.push("/loginform")
     }
     return (
         <div>
@@ -21,7 +22,7 @@ function Header() {
                         {
                             localStorage.getItem("user-info") ?
                             <>
-                                <Link to="/camppage">Camp Page</Link>
+                                <Link to="/homepage">Home Page</Link>
                                 <Link to="/wildcamping">Wild Camping</Link>
                                 <Link to="/riverside">Riverside</Link>
 
@@ -37,7 +38,7 @@ function Header() {
                    </Nav>
                    {localStorage.getItem("user-info") ?
                    <Nav>
-                        <NavDropdown title={user && user.email}>
+                        <NavDropdown title={user && user.email || user.emailLogin}>
                             <NavDropdown.Item onClick={logOut} >Logout</NavDropdown.Item>
                         </NavDropdown>
                    </Nav>
