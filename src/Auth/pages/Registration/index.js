@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from "react"
 import InputField from "../../components/InputField/index"
-import IconField from "../../components/IconField/index";
+import IconField from "../../components/IconField/index"
 import Button from "../../components/Button/index"
 import "./index.css"
 import { useHistory } from "react-router-dom"
@@ -20,14 +20,31 @@ function Registration() {
 
     async function signup() {
         let item = { email, password };
+        
 
-        if (!/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/.test(email)) {
-            return;
+        if (password.length < 6) {
+            alert("Your Password Should be at Least 6 Characters")
         }
-        if (!/.{6,}/.test(password)) {
+        
+        if (!/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/.test(email) || (!/.{6,}/.test(password)))   {
             return;
+        }     
+
+        const response = await fetch("https://61c458fef1af4a0017d994c8.mockapi.io/Auth");
+        const data = await response.json();
+
+        for (let i = 0; i < data.length; i++) {
+
+            if (data[i].email == email) {
+                alert("Already Registered with This Email Address")
+                 }
+            if (data[i].email == email) {
+             return; 
+             break;
+              }
             }
-            
+        
+
         let result = await fetch("https://61c458fef1af4a0017d994c8.mockapi.io/Auth", {
             method: "POST",
             body: JSON.stringify(item), // göndereceğimiz şeyi mutlaka string'e çevirmeliyiz.
@@ -39,11 +56,10 @@ function Registration() {
 
         result = await result.json()
         localStorage.setItem("user-info", JSON.stringify(result)) // local storage'a kaydederken string'e çevirmek zorundayız.
-        console.log(result)
+       
         window.location.reload();
         history.push("/homepage")
     }
-
 
     return (
         <div>

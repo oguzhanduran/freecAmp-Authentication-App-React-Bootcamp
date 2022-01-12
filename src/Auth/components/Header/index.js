@@ -38,7 +38,7 @@ function Header() {
                    </Nav>
                    {localStorage.getItem("user-info") ?
                    <Nav>
-                        <NavDropdown title={user && user.email || user.emailLogin}>
+                        <NavDropdown title={user && user.email.substring(0, user.email.indexOf("@"))}>
                             <NavDropdown.Item onClick={logOut} >Logout</NavDropdown.Item>
                         </NavDropdown>
                    </Nav>

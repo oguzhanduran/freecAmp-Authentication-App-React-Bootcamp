@@ -15,8 +15,8 @@ function LoginForm() {
         }
     }, []) // Burada local storage user-info key değerini aldığında sayfayı camppage sayfasına yönlendir dedik. Yani biz bunu yapmasaydık url yerine local3000/login yazsak o sayfa navbarda görünmese bile sayfaya giderdi kullanıcı. Biz login olduktan sonra tekrar login sayfasının gözükmesini istemediğimizden bu şekilde yaptık.
 
-    const [emailLogin, setEmailLogin] = useState("");
-    const [passwordLogin, setPasswordLogin] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
     const history = useHistory();
 
 
@@ -24,10 +24,10 @@ function LoginForm() {
 
       const response = await fetch("https://61c458fef1af4a0017d994c8.mockapi.io/Auth");
       const data = await response.json();
-      let item = { emailLogin, passwordLogin }
+      let item = { email, password }
       
         for (let i = 0; i < data.length; i++) {
-          if (data[i].email == emailLogin && data[i].password == passwordLogin) {
+          if (data[i].email == email && data[i].password == password) {
                 localStorage.setItem("user-info", JSON.stringify(item))
                 window.location.reload();
                 history.push("/homepage");
@@ -52,8 +52,8 @@ function LoginForm() {
                     <h1 className='lf-title-login'>Login</h1>
                 </div>
                 <div>
-                    <InputField value={emailLogin} onChange={(e) => setEmailLogin(e.target.value)} label="Email" type="email" placeholder="user@gmail.com" /> {/* Burda InputField'da olusturduğumuz propsları isimlendirdik. */}
-                    <InputField value={passwordLogin} onChange={(e) => setPasswordLogin(e.target.value)} label="Password" type="password" placeholder="Password" />
+                    <InputField value={email} onChange={(e) => setEmail(e.target.value)} label="Email" type="email" placeholder="user@gmail.com" /> {/* Burda InputField'da olusturduğumuz propsları isimlendirdik. */}
+                    <InputField value={password} onChange={(e) => setPassword(e.target.value)} label="Password" type="password" placeholder="Password" />
                     <Button onClick={login} buttonName="Sign in" />
                 </div>
                 <IconField />

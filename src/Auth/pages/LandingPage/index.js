@@ -20,7 +20,7 @@ function LandingPage() {
             <div className='home-container'>
                 <h1 className='hello'> Hello Camp Lovers! </h1>   
                 
-                <p className='paragraph'> Find the best campsites for families with our guide to sites that will keep the kids entertained and are suitable for families with children of all ages. We've got campsites with family-friendly activities like water-sports or horse-riding, and sites right next to the beach or in woodland where your kids can roam and learn about nature. If you'd like to find campsites further afield, you can try our french family campsites guide, or if you want something a little more glamorous, have a look at our family glamping guide. 
+                <p className='paragraph'> Find the best campsites for camp lovers with our guide to sites that will keep the kids entertained and are suitable for nature lovers of all ages. We've got campsites with family-friendly activities like water-sports or horse-riding, and sites right next to the beach or in woodland where your kids can roam and learn about nature. If you'd like to find campsites further afield, you can try our campsites guide, or if you want something a little more glamorous, have a look at our glamping guide. 
                     <br /><br />
                    
                     Oguzhan Duran</p>
