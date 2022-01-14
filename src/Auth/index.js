@@ -19,10 +19,6 @@ function Auth() {
           <Route exact path="/" component={LandingPage} />
           <Route exact path="/loginform" component={LoginForm} />
           <Route exact path="/registration" component={Registration} />
-          {/* <Route exact path="/camppage" component={CampPage} />
-          <Route exact path="/wildcamping" component={WildCamping} />
-          <Route exact path="/riverside" component={Riverside} /> */}
-
           <Route exact path="/homepage"> <ProtectedRoutes Cmp={HomePage}/> </Route>
           <Route exact path="/wildcamping"> <ProtectedRoutes Cmp={WildCamping}/> </Route>
           <Route exact path="/riverside"> <ProtectedRoutes Cmp={Riverside}/> </Route>
