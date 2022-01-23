@@ -1,9 +1,9 @@
 # Pazarama React Bootcamp
 
-## React.js | React Authentication App
+## React.js | freecAmp Authentication App
 
 
-<a href="https://freecamp-authentication-app.netlify.app/" target="_blank">React Authentication App</a>
+<a href="https://freecamp-authentication-app.netlify.app/" target="_blank">freecAmp Authentication App</a>
 
 
 <br>
