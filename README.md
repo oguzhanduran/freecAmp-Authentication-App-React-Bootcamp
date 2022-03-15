@@ -3,7 +3,15 @@
 ## React.js | freecAmp Authentication App
 
 
-<a href="https://freecamp-authentication-app.netlify.app/" target="_blank">freecAmp Authentication App</a>
+<div>
+
+  <p align="center">
+    The application provides instant and weekly forecast weather information of the desired location.
+    <br />
+    <br />
+    <a href="https://freecamp-authentication-app.netlify.app/" target="_blank">↪️ See it live!</a>
+  </p>
+
 
 
 <br>
