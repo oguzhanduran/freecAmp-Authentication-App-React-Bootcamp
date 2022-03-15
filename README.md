@@ -31,3 +31,8 @@
 
 ### Welcome Page
 <img src= "./img/4.png">
+
+
+## ⭐️ Show Your Support
+
+Please give a ⭐️ if this project helped you!
